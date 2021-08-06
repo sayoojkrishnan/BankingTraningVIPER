@@ -9,12 +9,17 @@ import Foundation
 
 final class DepositListPresenter : DepositListPresenterProtocol {
     
+
     func navigateToDeposit() {
         router.navigateToDeposit()
     }
     
     func present() {
         interactor.fetchDeposits()
+    }
+    
+    func paginate() {
+        interactor.paginate()
     }
     
     var view: DepositListViewControllerProtocol!
@@ -26,6 +31,11 @@ final class DepositListPresenter : DepositListPresenterProtocol {
 }
 
 extension DepositListPresenter : DepositListInteractorPresenterProtocol {
+    
+    func showWarning(message: String) {
+        view.showWarning(message: message)
+    }
+    
     
     func updateBottomBanner(total: String, transactions: String) {
         view.updateBottomBanner(total: total, transactions: transactions)
@@ -42,6 +52,5 @@ extension DepositListPresenter : DepositListInteractorPresenterProtocol {
     func updatePaginationUI(forState state: DepositListViewState) {
         view.updatePaginationUI(forState: state)
     }
-    
     
 }

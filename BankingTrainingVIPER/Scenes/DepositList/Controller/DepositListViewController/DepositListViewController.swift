@@ -47,14 +47,12 @@ class DepositListViewController: BaseViewController {
         
         title = "Deposits"
         
-        configureTableView()
-        buildNabutton()
-        spinner.startAnimating()
-        bottomView.clipsToBounds = true
-        bottomView.layer.cornerRadius = 8
-        bottomView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
+        configureViews()
         presenter?.present()
         
+        dataSource.reachedEndOfScroll = { [unowned self] in
+            presenter?.paginate()
+        }
     }
 
     func showFailureAlert(message :String) {
@@ -70,8 +68,19 @@ class DepositListViewController: BaseViewController {
     }
     
     
+    private func configureViews() {
+        configureTableView()
+        buildNabutton()
+        spinner.startAnimating()
+        bottomView.clipsToBounds = true
+        bottomView.layer.cornerRadius = 8
+        bottomView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
+        bottomView.isHidden = true
+    }
+    
+    
     @objc private func didTapDeposit() {
-        
+        presenter?.navigateToDeposit()
     }
     
     

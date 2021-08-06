@@ -7,7 +7,7 @@
 import Combine
 import Foundation
 final class DepositListInteractor : DepositListInteractorProtocol {
-    
+   
     typealias PaginationState = DepositViewState
     typealias DepositReponse = Subscribers.Completion<DepositError>
     
@@ -16,6 +16,8 @@ final class DepositListInteractor : DepositListInteractorProtocol {
         case failed
         case success
     }
+    
+    private var paginateAttemptCount = 0
     
     var totalDeposits : String {
         return "$" + String(format: "%.2f", total)
@@ -79,10 +81,17 @@ final class DepositListInteractor : DepositListInteractorProtocol {
         case noMoreData
     }
     
-    func paginate() throws  {
+    func paginate()   {
+        
         if !hasMoreData {
-            throw PaginationError.noMoreData
+            if paginateAttemptCount >= 2 {
+                presenter.showWarning(message: "No more transaction available!")
+                paginateAttemptCount = 0
+            }
+            paginateAttemptCount+=1
+            return
         }
+        
         presenter.updatePaginationUI(forState: .loading)
         getDeposits(pageSize: pageSize, offset: offset) { [weak self] res  in
             switch res {

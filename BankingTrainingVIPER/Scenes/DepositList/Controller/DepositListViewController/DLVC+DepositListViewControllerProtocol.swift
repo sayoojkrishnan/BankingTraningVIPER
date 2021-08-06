@@ -22,6 +22,7 @@ extension DepositListViewController : DepositListViewControllerProtocol {
             spinner.stopAnimating()
             showFailureAlert(message: error)
         case .success :
+            bottomView.isHidden = false
             depositsTableView.isHidden = false
             spinner.stopAnimating()
         }
@@ -44,6 +45,9 @@ extension DepositListViewController : DepositListViewControllerProtocol {
         depositsTableView.reloadData()
     }
     
+    func showWarning(message: String) {
+        self.showAlert(title: message, alertType: .warning)
+    }
 }
 
 

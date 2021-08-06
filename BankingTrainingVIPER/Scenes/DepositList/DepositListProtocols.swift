@@ -23,6 +23,8 @@ protocol DepositListViewControllerProtocol : AnyObject {
     
     func updateBottomBanner(total :String, transactions : String)
     
+    func showWarning(message : String)
+    
 }
 
 protocol DepositListRouterProtocol : AnyObject {
@@ -37,7 +39,7 @@ protocol DepositListPresenterProtocol  : AnyObject {
     
     func navigateToDeposit()
     func present()
-    
+    func paginate()
    
 }
 
@@ -46,6 +48,7 @@ typealias DepositListInteractorPresenterProtocol = DepositListViewControllerProt
 protocol DepositListInteractorProtocol : AnyObject {
     init(service : DepositsListServiceProtocol)
     func fetchDeposits()
+    func paginate() 
     var presenter : DepositListInteractorPresenterProtocol! {get set}
 }
 
