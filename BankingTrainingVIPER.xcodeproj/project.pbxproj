@@ -7,14 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87B9ADAD26BD248800F70A16 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADAC26BD248800F70A16 /* ModuleBuilder.swift */; };
+		87B9ADAF26BD24C100F70A16 /* HomeTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADAE26BD24C100F70A16 /* HomeTabBarBuilder.swift */; };
+		87B9ADB126BD24DE00F70A16 /* ZelleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */; };
+		87B9ADB326BD24FA00F70A16 /* TransferBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB226BD24FA00F70A16 /* TransferBuilder.swift */; };
+		87B9ADB526BD258800F70A16 /* AccountBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB426BD258800F70A16 /* AccountBuilder.swift */; };
 		87E6C4A526BA6DFD00994FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A426BA6DFD00994FA4 /* AppDelegate.swift */; };
 		87E6C4A726BA6DFD00994FA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */; };
-		87E6C4A926BA6DFD00994FA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A826BA6DFD00994FA4 /* ViewController.swift */; };
-		87E6C4AC26BA6DFD00994FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E6C4AA26BA6DFD00994FA4 /* Main.storyboard */; };
+		87E6C4A926BA6DFD00994FA4 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A826BA6DFD00994FA4 /* HomeTabBarController.swift */; };
 		87E6C4AE26BA6DFE00994FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E6C4AD26BA6DFE00994FA4 /* Assets.xcassets */; };
 		87E6C4B126BA6DFE00994FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E6C4AF26BA6DFE00994FA4 /* LaunchScreen.storyboard */; };
 		87E6C4BC26BA6DFE00994FA4 /* BankingTrainingVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4BB26BA6DFE00994FA4 /* BankingTrainingVIPERTests.swift */; };
 		87E6C4C726BA6DFE00994FA4 /* BankingTrainingVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4C626BA6DFE00994FA4 /* BankingTrainingVIPERUITests.swift */; };
+		87E6C4D526BA75D300994FA4 /* MoreBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4D426BA75D200994FA4 /* MoreBuilder.swift */; };
+		87E6C4DF26BA7F5100994FA4 /* DLVC+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4D826BA7F5000994FA4 /* DLVC+SearchBar.swift */; };
+		87E6C4E026BA7F5100994FA4 /* DepositListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4D926BA7F5000994FA4 /* DepositListViewController.swift */; };
+		87E6C4E126BA7F5100994FA4 /* DLVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4DA26BA7F5000994FA4 /* DLVC+TableView.swift */; };
+		87E6C4E326BA7F5100994FA4 /* DLVC+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4DC26BA7F5100994FA4 /* DLVC+Animations.swift */; };
+		87E6C4E426BA7F5100994FA4 /* DepositListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E6C4DD26BA7F5100994FA4 /* DepositListViewController.xib */; };
+		87E6C4E526BA7F5100994FA4 /* DLVC+DepositListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4DE26BA7F5100994FA4 /* DLVC+DepositListViewControllerProtocol.swift */; };
+		87E6C4E826BA7F8300994FA4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4E626BA7F8300994FA4 /* BaseViewController.swift */; };
+		87E6C4EB26BA7FCB00994FA4 /* DepositListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4EA26BA7FCB00994FA4 /* DepositListTableViewDataSource.swift */; };
+		87E6C4ED26BA7FDA00994FA4 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4EC26BA7FDA00994FA4 /* SearchResultsController.swift */; };
+		87E6C4F026BA7FEE00994FA4 /* DepositTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4EE26BA7FEE00994FA4 /* DepositTableViewCell.swift */; };
+		87E6C4F126BA7FEE00994FA4 /* DepositTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E6C4EF26BA7FEE00994FA4 /* DepositTableViewCell.xib */; };
+		87E6C4F426BA802600994FA4 /* SnackBar+AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4F226BA802600994FA4 /* SnackBar+AlertView.swift */; };
+		87E6C4F526BA802600994FA4 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4F326BA802600994FA4 /* SnackBar.swift */; };
+		87E6C4F726BA802900994FA4 /* SnackBar+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4F626BA802900994FA4 /* SnackBar+Builder.swift */; };
+		87E6C4FA26BA807A00994FA4 /* DepositViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4F926BA807A00994FA4 /* DepositViewModel.swift */; };
+		87E6C4FE26BA813A00994FA4 /* DepositError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4FC26BA813A00994FA4 /* DepositError.swift */; };
+		87E6C4FF26BA813A00994FA4 /* DepositModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4FD26BA813A00994FA4 /* DepositModel.swift */; };
+		87E6C50A26BA815000994FA4 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50126BA815000994FA4 /* MockURLSession.swift */; };
+		87E6C50B26BA815000994FA4 /* ServiceBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50226BA815000994FA4 /* ServiceBuildable.swift */; };
+		87E6C50C26BA815000994FA4 /* ServiceRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50326BA815000994FA4 /* ServiceRequestMethod.swift */; };
+		87E6C50D26BA815000994FA4 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50426BA815000994FA4 /* URLRequest.swift */; };
+		87E6C50E26BA815000994FA4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50526BA815000994FA4 /* NetworkClient.swift */; };
+		87E6C50F26BA815000994FA4 /* NetworkClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50626BA815000994FA4 /* NetworkClientError.swift */; };
+		87E6C51026BA815000994FA4 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50726BA815000994FA4 /* Cache.swift */; };
+		87E6C51126BA815000994FA4 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50826BA815000994FA4 /* URLSessionProtocol.swift */; };
+		87E6C51226BA815000994FA4 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C50926BA815000994FA4 /* ServiceRequest.swift */; };
+		87E6C51426BA815C00994FA4 /* deposits_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 87E6C51326BA815C00994FA4 /* deposits_list.json */; };
+		87E6C51626BA816F00994FA4 /* DepositListsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C51526BA816F00994FA4 /* DepositListsService.swift */; };
+		87E6C51926BA823100994FA4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C51826BA823100994FA4 /* Environment.swift */; };
+		87E6C51E26BA88B800994FA4 /* DepositListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C51D26BA88B800994FA4 /* DepositListProtocols.swift */; };
+		87E6C52026BA959F00994FA4 /* DepositListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C51F26BA959F00994FA4 /* DepositListPresenter.swift */; };
+		87E6C52226BA95FC00994FA4 /* DepositListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C52126BA95FC00994FA4 /* DepositListInteractor.swift */; };
+		87E6C52426BA9A0E00994FA4 /* DepositListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C52326BA9A0E00994FA4 /* DepositListRouter.swift */; };
+		87E6C52626BAA89F00994FA4 /* DepositBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C52526BAA89F00994FA4 /* DepositBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +74,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87B9ADAC26BD248800F70A16 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		87B9ADAE26BD24C100F70A16 /* HomeTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarBuilder.swift; sourceTree = "<group>"; };
+		87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZelleBuilder.swift; sourceTree = "<group>"; };
+		87B9ADB226BD24FA00F70A16 /* TransferBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBuilder.swift; sourceTree = "<group>"; };
+		87B9ADB426BD258800F70A16 /* AccountBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBuilder.swift; sourceTree = "<group>"; };
 		87E6C4A126BA6DFD00994FA4 /* BankingTrainingVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingTrainingVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E6C4A426BA6DFD00994FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87E6C4A826BA6DFD00994FA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87E6C4AB26BA6DFD00994FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87E6C4A826BA6DFD00994FA4 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		87E6C4AD26BA6DFE00994FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E6C4B026BA6DFE00994FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E6C4B226BA6DFE00994FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +92,41 @@
 		87E6C4C226BA6DFE00994FA4 /* BankingTrainingVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingTrainingVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E6C4C626BA6DFE00994FA4 /* BankingTrainingVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingTrainingVIPERUITests.swift; sourceTree = "<group>"; };
 		87E6C4C826BA6DFE00994FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E6C4D426BA75D200994FA4 /* MoreBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreBuilder.swift; sourceTree = "<group>"; };
+		87E6C4D826BA7F5000994FA4 /* DLVC+SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DLVC+SearchBar.swift"; sourceTree = "<group>"; };
+		87E6C4D926BA7F5000994FA4 /* DepositListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositListViewController.swift; sourceTree = "<group>"; };
+		87E6C4DA26BA7F5000994FA4 /* DLVC+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DLVC+TableView.swift"; sourceTree = "<group>"; };
+		87E6C4DC26BA7F5100994FA4 /* DLVC+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DLVC+Animations.swift"; sourceTree = "<group>"; };
+		87E6C4DD26BA7F5100994FA4 /* DepositListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DepositListViewController.xib; sourceTree = "<group>"; };
+		87E6C4DE26BA7F5100994FA4 /* DLVC+DepositListViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DLVC+DepositListViewControllerProtocol.swift"; sourceTree = "<group>"; };
+		87E6C4E626BA7F8300994FA4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		87E6C4EA26BA7FCB00994FA4 /* DepositListTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositListTableViewDataSource.swift; sourceTree = "<group>"; };
+		87E6C4EC26BA7FDA00994FA4 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		87E6C4EE26BA7FEE00994FA4 /* DepositTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositTableViewCell.swift; sourceTree = "<group>"; };
+		87E6C4EF26BA7FEE00994FA4 /* DepositTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DepositTableViewCell.xib; sourceTree = "<group>"; };
+		87E6C4F226BA802600994FA4 /* SnackBar+AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnackBar+AlertView.swift"; sourceTree = "<group>"; };
+		87E6C4F326BA802600994FA4 /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
+		87E6C4F626BA802900994FA4 /* SnackBar+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnackBar+Builder.swift"; sourceTree = "<group>"; };
+		87E6C4F926BA807A00994FA4 /* DepositViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositViewModel.swift; sourceTree = "<group>"; };
+		87E6C4FC26BA813A00994FA4 /* DepositError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositError.swift; sourceTree = "<group>"; };
+		87E6C4FD26BA813A00994FA4 /* DepositModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositModel.swift; sourceTree = "<group>"; };
+		87E6C50126BA815000994FA4 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		87E6C50226BA815000994FA4 /* ServiceBuildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceBuildable.swift; sourceTree = "<group>"; };
+		87E6C50326BA815000994FA4 /* ServiceRequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequestMethod.swift; sourceTree = "<group>"; };
+		87E6C50426BA815000994FA4 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		87E6C50526BA815000994FA4 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		87E6C50626BA815000994FA4 /* NetworkClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientError.swift; sourceTree = "<group>"; };
+		87E6C50726BA815000994FA4 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		87E6C50826BA815000994FA4 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		87E6C50926BA815000994FA4 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		87E6C51326BA815C00994FA4 /* deposits_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deposits_list.json; sourceTree = "<group>"; };
+		87E6C51526BA816F00994FA4 /* DepositListsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepositListsService.swift; sourceTree = "<group>"; };
+		87E6C51826BA823100994FA4 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		87E6C51D26BA88B800994FA4 /* DepositListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositListProtocols.swift; sourceTree = "<group>"; };
+		87E6C51F26BA959F00994FA4 /* DepositListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositListPresenter.swift; sourceTree = "<group>"; };
+		87E6C52126BA95FC00994FA4 /* DepositListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositListInteractor.swift; sourceTree = "<group>"; };
+		87E6C52326BA9A0E00994FA4 /* DepositListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositListRouter.swift; sourceTree = "<group>"; };
+		87E6C52526BAA89F00994FA4 /* DepositBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +154,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87B9ADB626BD25E000F70A16 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C52526BAA89F00994FA4 /* DepositBuilder.swift */,
+				87B9ADAC26BD248800F70A16 /* ModuleBuilder.swift */,
+				87B9ADAE26BD24C100F70A16 /* HomeTabBarBuilder.swift */,
+				87E6C4D426BA75D200994FA4 /* MoreBuilder.swift */,
+				87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */,
+				87B9ADB226BD24FA00F70A16 /* TransferBuilder.swift */,
+				87B9ADB426BD258800F70A16 /* AccountBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		87B9ADB726BD269D00F70A16 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C4F826BA803300994FA4 /* Snackbar */,
+				87E6C4A426BA6DFD00994FA4 /* AppDelegate.swift */,
+				87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */,
+				87E6C4A826BA6DFD00994FA4 /* HomeTabBarController.swift */,
+				87E6C4E626BA7F8300994FA4 /* BaseViewController.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		87B9ADB826BD26D100F70A16 /* AddDeposit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddDeposit;
+			sourceTree = "<group>";
+		};
 		87E6C49826BA6DFD00994FA4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +210,11 @@
 		87E6C4A326BA6DFD00994FA4 /* BankingTrainingVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				87E6C4A426BA6DFD00994FA4 /* AppDelegate.swift */,
-				87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */,
-				87E6C4A826BA6DFD00994FA4 /* ViewController.swift */,
-				87E6C4AA26BA6DFD00994FA4 /* Main.storyboard */,
+				87E6C50026BA814000994FA4 /* Networking */,
+				87E6C4D626BA7F3A00994FA4 /* Scenes */,
+				87B9ADB726BD269D00F70A16 /* Supporting */,
+				87B9ADB626BD25E000F70A16 /* Builders */,
+				87E6C51826BA823100994FA4 /* Environment.swift */,
 				87E6C4AD26BA6DFE00994FA4 /* Assets.xcassets */,
 				87E6C4AF26BA6DFE00994FA4 /* LaunchScreen.storyboard */,
 				87E6C4B226BA6DFE00994FA4 /* Info.plist */,
@@ -126,6 +238,99 @@
 				87E6C4C826BA6DFE00994FA4 /* Info.plist */,
 			);
 			path = BankingTrainingVIPERUITests;
+			sourceTree = "<group>";
+		};
+		87E6C4D626BA7F3A00994FA4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				87B9ADB826BD26D100F70A16 /* AddDeposit */,
+				87E6C4D726BA7F4300994FA4 /* DepositList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		87E6C4D726BA7F4300994FA4 /* DepositList */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C51F26BA959F00994FA4 /* DepositListPresenter.swift */,
+				87E6C52126BA95FC00994FA4 /* DepositListInteractor.swift */,
+				87E6C52326BA9A0E00994FA4 /* DepositListRouter.swift */,
+				87E6C51D26BA88B800994FA4 /* DepositListProtocols.swift */,
+				87E6C51726BA81CD00994FA4 /* Model+ViewModel+DataSource */,
+				87E6C4FB26BA80F700994FA4 /* Cells */,
+				87E6C51A26BA851000994FA4 /* Controller */,
+			);
+			path = DepositList;
+			sourceTree = "<group>";
+		};
+		87E6C4F826BA803300994FA4 /* Snackbar */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C4F326BA802600994FA4 /* SnackBar.swift */,
+				87E6C4F226BA802600994FA4 /* SnackBar+AlertView.swift */,
+				87E6C4F626BA802900994FA4 /* SnackBar+Builder.swift */,
+			);
+			path = Snackbar;
+			sourceTree = "<group>";
+		};
+		87E6C4FB26BA80F700994FA4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C4EE26BA7FEE00994FA4 /* DepositTableViewCell.swift */,
+				87E6C4EF26BA7FEE00994FA4 /* DepositTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		87E6C50026BA814000994FA4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C51326BA815C00994FA4 /* deposits_list.json */,
+				87E6C50726BA815000994FA4 /* Cache.swift */,
+				87E6C50126BA815000994FA4 /* MockURLSession.swift */,
+				87E6C50526BA815000994FA4 /* NetworkClient.swift */,
+				87E6C50626BA815000994FA4 /* NetworkClientError.swift */,
+				87E6C50226BA815000994FA4 /* ServiceBuildable.swift */,
+				87E6C50926BA815000994FA4 /* ServiceRequest.swift */,
+				87E6C50326BA815000994FA4 /* ServiceRequestMethod.swift */,
+				87E6C50426BA815000994FA4 /* URLRequest.swift */,
+				87E6C50826BA815000994FA4 /* URLSessionProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		87E6C51726BA81CD00994FA4 /* Model+ViewModel+DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C51526BA816F00994FA4 /* DepositListsService.swift */,
+				87E6C4EA26BA7FCB00994FA4 /* DepositListTableViewDataSource.swift */,
+				87E6C4FC26BA813A00994FA4 /* DepositError.swift */,
+				87E6C4FD26BA813A00994FA4 /* DepositModel.swift */,
+				87E6C4F926BA807A00994FA4 /* DepositViewModel.swift */,
+			);
+			path = "Model+ViewModel+DataSource";
+			sourceTree = "<group>";
+		};
+		87E6C51A26BA851000994FA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C4EC26BA7FDA00994FA4 /* SearchResultsController.swift */,
+				87E6C51B26BA87AC00994FA4 /* DepositListViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87E6C51B26BA87AC00994FA4 /* DepositListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				87E6C4D926BA7F5000994FA4 /* DepositListViewController.swift */,
+				87E6C4DD26BA7F5100994FA4 /* DepositListViewController.xib */,
+				87E6C4DC26BA7F5100994FA4 /* DLVC+Animations.swift */,
+				87E6C4D826BA7F5000994FA4 /* DLVC+SearchBar.swift */,
+				87E6C4DA26BA7F5000994FA4 /* DLVC+TableView.swift */,
+				87E6C4DE26BA7F5100994FA4 /* DLVC+DepositListViewControllerProtocol.swift */,
+			);
+			path = DepositListViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E6C4B126BA6DFE00994FA4 /* LaunchScreen.storyboard in Resources */,
+				87E6C4F126BA7FEE00994FA4 /* DepositTableViewCell.xib in Resources */,
+				87E6C4E426BA7F5100994FA4 /* DepositListViewController.xib in Resources */,
 				87E6C4AE26BA6DFE00994FA4 /* Assets.xcassets in Resources */,
-				87E6C4AC26BA6DFD00994FA4 /* Main.storyboard in Resources */,
+				87E6C51426BA815C00994FA4 /* deposits_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +465,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87E6C4A926BA6DFD00994FA4 /* ViewController.swift in Sources */,
+				87E6C51126BA815000994FA4 /* URLSessionProtocol.swift in Sources */,
+				87E6C52026BA959F00994FA4 /* DepositListPresenter.swift in Sources */,
+				87B9ADAF26BD24C100F70A16 /* HomeTabBarBuilder.swift in Sources */,
+				87B9ADB326BD24FA00F70A16 /* TransferBuilder.swift in Sources */,
+				87E6C50B26BA815000994FA4 /* ServiceBuildable.swift in Sources */,
+				87E6C50F26BA815000994FA4 /* NetworkClientError.swift in Sources */,
+				87E6C50D26BA815000994FA4 /* URLRequest.swift in Sources */,
+				87E6C4A926BA6DFD00994FA4 /* HomeTabBarController.swift in Sources */,
+				87E6C4E026BA7F5100994FA4 /* DepositListViewController.swift in Sources */,
+				87E6C4E826BA7F8300994FA4 /* BaseViewController.swift in Sources */,
+				87E6C52226BA95FC00994FA4 /* DepositListInteractor.swift in Sources */,
+				87E6C51026BA815000994FA4 /* Cache.swift in Sources */,
+				87E6C50C26BA815000994FA4 /* ServiceRequestMethod.swift in Sources */,
+				87E6C51626BA816F00994FA4 /* DepositListsService.swift in Sources */,
+				87E6C4FE26BA813A00994FA4 /* DepositError.swift in Sources */,
+				87E6C4D526BA75D300994FA4 /* MoreBuilder.swift in Sources */,
 				87E6C4A526BA6DFD00994FA4 /* AppDelegate.swift in Sources */,
+				87E6C4E526BA7F5100994FA4 /* DLVC+DepositListViewControllerProtocol.swift in Sources */,
+				87E6C4F026BA7FEE00994FA4 /* DepositTableViewCell.swift in Sources */,
+				87E6C50A26BA815000994FA4 /* MockURLSession.swift in Sources */,
+				87E6C4F726BA802900994FA4 /* SnackBar+Builder.swift in Sources */,
 				87E6C4A726BA6DFD00994FA4 /* SceneDelegate.swift in Sources */,
+				87E6C4E326BA7F5100994FA4 /* DLVC+Animations.swift in Sources */,
+				87B9ADB126BD24DE00F70A16 /* ZelleBuilder.swift in Sources */,
+				87E6C52426BA9A0E00994FA4 /* DepositListRouter.swift in Sources */,
+				87E6C51926BA823100994FA4 /* Environment.swift in Sources */,
+				87B9ADAD26BD248800F70A16 /* ModuleBuilder.swift in Sources */,
+				87E6C4FF26BA813A00994FA4 /* DepositModel.swift in Sources */,
+				87E6C4DF26BA7F5100994FA4 /* DLVC+SearchBar.swift in Sources */,
+				87E6C4EB26BA7FCB00994FA4 /* DepositListTableViewDataSource.swift in Sources */,
+				87E6C51226BA815000994FA4 /* ServiceRequest.swift in Sources */,
+				87E6C4F426BA802600994FA4 /* SnackBar+AlertView.swift in Sources */,
+				87E6C4ED26BA7FDA00994FA4 /* SearchResultsController.swift in Sources */,
+				87E6C52626BAA89F00994FA4 /* DepositBuilder.swift in Sources */,
+				87E6C4F526BA802600994FA4 /* SnackBar.swift in Sources */,
+				87B9ADB526BD258800F70A16 /* AccountBuilder.swift in Sources */,
+				87E6C4E126BA7F5100994FA4 /* DLVC+TableView.swift in Sources */,
+				87E6C51E26BA88B800994FA4 /* DepositListProtocols.swift in Sources */,
+				87E6C4FA26BA807A00994FA4 /* DepositViewModel.swift in Sources */,
+				87E6C50E26BA815000994FA4 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +540,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87E6C4AA26BA6DFD00994FA4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87E6C4AB26BA6DFD00994FA4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87E6C4AF26BA6DFE00994FA4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

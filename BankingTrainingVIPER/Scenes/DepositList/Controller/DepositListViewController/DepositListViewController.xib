@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DepositListViewController" customModule="BankingTrainingVIPER" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="RFB-Y2-EHQ" id="GVl-Xa-jil"/>
+                <outlet property="depositsTableView" destination="Rnq-70-m66" id="Bnq-M7-Aiu"/>
+                <outlet property="spinner" destination="V1R-fb-hha" id="MrB-0v-tJk"/>
+                <outlet property="totalDepositAmount" destination="erI-45-V0h" id="FIf-a8-Ind"/>
+                <outlet property="totalTransactions" destination="7Oy-4m-vaA" id="DLW-CK-dhF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Rnq-70-m66">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="V1R-fb-hha">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-Y2-EHQ">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oy-4m-vaA">
+                            <rect key="frame" x="20" y="25" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erI-45-V0h">
+                            <rect key="frame" x="394" y="25" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7Oy-4m-vaA" firstAttribute="leading" secondItem="RFB-Y2-EHQ" secondAttribute="leading" constant="20" id="HqG-vm-0QY"/>
+                        <constraint firstAttribute="trailing" secondItem="erI-45-V0h" secondAttribute="trailing" constant="20" id="WFe-rT-mPR"/>
+                        <constraint firstItem="erI-45-V0h" firstAttribute="centerY" secondItem="RFB-Y2-EHQ" secondAttribute="centerY" id="fPt-u4-BBi"/>
+                        <constraint firstAttribute="height" constant="50" id="quY-Fa-lO8"/>
+                        <constraint firstItem="7Oy-4m-vaA" firstAttribute="centerY" secondItem="RFB-Y2-EHQ" secondAttribute="centerY" id="z8L-Fk-CoM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="V1R-fb-hha" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Cg-VD-81b"/>
+                <constraint firstItem="Rnq-70-m66" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2gM-8W-Spg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RFB-Y2-EHQ" secondAttribute="bottom" id="61T-oB-R5f"/>
+                <constraint firstItem="Rnq-70-m66" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BHD-hJ-YEg"/>
+                <constraint firstItem="RFB-Y2-EHQ" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Y9C-Ma-zdl"/>
+                <constraint firstItem="RFB-Y2-EHQ" firstAttribute="top" secondItem="Rnq-70-m66" secondAttribute="bottom" id="jj3-AE-Gbd"/>
+                <constraint firstItem="RFB-Y2-EHQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mrQ-uj-xlE"/>
+                <constraint firstItem="Rnq-70-m66" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tXa-rn-aeh"/>
+                <constraint firstItem="V1R-fb-hha" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="z8U-ja-0Qv"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
