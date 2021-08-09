@@ -12,6 +12,7 @@ struct DepositBuilder : BaseModuleBuilder {
         let interactor = DepositListInteractor()
         let presenter = DepositListPresenter()
         let router = DepositListRouter()
+        
         let controller = DepositListViewController.build()
         controller.presenter = presenter
         presenter.interactor = interactor
@@ -19,8 +20,12 @@ struct DepositBuilder : BaseModuleBuilder {
         presenter.view = controller
         interactor.presenter = presenter
         
+        let nav = UINavigationController(rootViewController: controller)
+        nav.navigationBar.prefersLargeTitles = true
+        router.nav = nav
+        
         controller.tabBarItem.title = "Deposit"
         controller.tabBarItem.image = UIImage(systemName: "square.and.arrow.down.on.square")
-        return controller
+        return nav
     }
 }

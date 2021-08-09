@@ -15,11 +15,7 @@ struct HomeTabBarBuilder :  BaseModuleBuilder {
             DepositBuilder.build(),
             TransferBuilder.build(),
             MoreBuilder.build()
-        ].map({
-            let nav =  UINavigationController(rootViewController: $0)
-            nav.navigationBar.prefersLargeTitles = true
-            return nav
-        })
+        ]
             
     }
     

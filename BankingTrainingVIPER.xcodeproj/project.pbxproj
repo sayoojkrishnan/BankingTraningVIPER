@@ -12,6 +12,9 @@
 		87B9ADB126BD24DE00F70A16 /* ZelleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */; };
 		87B9ADB326BD24FA00F70A16 /* TransferBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB226BD24FA00F70A16 /* TransferBuilder.swift */; };
 		87B9ADB526BD258800F70A16 /* AccountBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB426BD258800F70A16 /* AccountBuilder.swift */; };
+		87B9ADF526C1397A00F70A16 /* DepositListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADF426C1397A00F70A16 /* DepositListPresenterTest.swift */; };
+		87B9ADF726C139AA00F70A16 /* DepositListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADF626C139AA00F70A16 /* DepositListInteractorTests.swift */; };
+		87B9ADF926C15B7A00F70A16 /* AddDepositBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADF826C15B7A00F70A16 /* AddDepositBuilder.swift */; };
 		87E6C4A526BA6DFD00994FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A426BA6DFD00994FA4 /* AppDelegate.swift */; };
 		87E6C4A726BA6DFD00994FA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */; };
 		87E6C4A926BA6DFD00994FA4 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6C4A826BA6DFD00994FA4 /* HomeTabBarController.swift */; };
@@ -79,6 +82,9 @@
 		87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZelleBuilder.swift; sourceTree = "<group>"; };
 		87B9ADB226BD24FA00F70A16 /* TransferBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferBuilder.swift; sourceTree = "<group>"; };
 		87B9ADB426BD258800F70A16 /* AccountBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBuilder.swift; sourceTree = "<group>"; };
+		87B9ADF426C1397A00F70A16 /* DepositListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositListPresenterTest.swift; sourceTree = "<group>"; };
+		87B9ADF626C139AA00F70A16 /* DepositListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositListInteractorTests.swift; sourceTree = "<group>"; };
+		87B9ADF826C15B7A00F70A16 /* AddDepositBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepositBuilder.swift; sourceTree = "<group>"; };
 		87E6C4A126BA6DFD00994FA4 /* BankingTrainingVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingTrainingVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E6C4A426BA6DFD00994FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */,
 				87B9ADB226BD24FA00F70A16 /* TransferBuilder.swift */,
 				87B9ADB426BD258800F70A16 /* AccountBuilder.swift */,
+				87B9ADF826C15B7A00F70A16 /* AddDepositBuilder.swift */,
 			);
 			path = Builders;
 			sourceTree = "<group>";
@@ -226,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				87E6C4BB26BA6DFE00994FA4 /* BankingTrainingVIPERTests.swift */,
+				87B9ADF426C1397A00F70A16 /* DepositListPresenterTest.swift */,
+				87B9ADF626C139AA00F70A16 /* DepositListInteractorTests.swift */,
 				87E6C4BD26BA6DFE00994FA4 /* Info.plist */,
 			);
 			path = BankingTrainingVIPERTests;
@@ -501,6 +510,7 @@
 				87E6C52626BAA89F00994FA4 /* DepositBuilder.swift in Sources */,
 				87E6C4F526BA802600994FA4 /* SnackBar.swift in Sources */,
 				87B9ADB526BD258800F70A16 /* AccountBuilder.swift in Sources */,
+				87B9ADF926C15B7A00F70A16 /* AddDepositBuilder.swift in Sources */,
 				87E6C4E126BA7F5100994FA4 /* DLVC+TableView.swift in Sources */,
 				87E6C51E26BA88B800994FA4 /* DepositListProtocols.swift in Sources */,
 				87E6C4FA26BA807A00994FA4 /* DepositViewModel.swift in Sources */,
@@ -513,6 +523,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87E6C4BC26BA6DFE00994FA4 /* BankingTrainingVIPERTests.swift in Sources */,
+				87B9ADF526C1397A00F70A16 /* DepositListPresenterTest.swift in Sources */,
+				87B9ADF726C139AA00F70A16 /* DepositListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

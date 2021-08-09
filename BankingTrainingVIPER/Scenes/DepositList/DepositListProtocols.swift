@@ -5,9 +5,9 @@
 //  Created by Sayooj Krishnan  on 04/08/21.
 //
 
-import Foundation
+import UIKit
 
-enum DepositListViewState {
+enum DepositListViewState  : Equatable{
     case loading
     case failed(String)
     case success
@@ -28,6 +28,7 @@ protocol DepositListViewControllerProtocol : AnyObject {
 }
 
 protocol DepositListRouterProtocol : AnyObject {
+    var nav : UINavigationController! {get}
     func navigateToDeposit()
 }
 
