@@ -9,8 +9,6 @@ import UIKit
 
 struct AddDepositBuilder : BaseModuleBuilder {
     static func build() -> UIViewController {
-        
-        //
-        return UIViewController()
+        return AddDepositViewController(nibName: "AddDepositViewController", bundle: Bundle(for: AddDepositViewController.self))
     }
 }
