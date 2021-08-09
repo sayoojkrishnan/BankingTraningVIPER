@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A78676526C106AC000B63B8 /* AddDepositPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78676426C106AC000B63B8 /* AddDepositPresenter.swift */; };
+		6A78676726C106D3000B63B8 /* AddDepositInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78676626C106D3000B63B8 /* AddDepositInteractor.swift */; };
+		6A78676926C10700000B63B8 /* AddDepositRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78676826C10700000B63B8 /* AddDepositRouter.swift */; };
+		6A78676B26C10729000B63B8 /* AddDepositViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78676A26C10729000B63B8 /* AddDepositViewController.swift */; };
+		6A7EB8F426C11C10002A63B0 /* AddDepositViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7EB8F326C11C10002A63B0 /* AddDepositViewController.xib */; };
+		6A7EB8F726C11D3F002A63B0 /* ChequImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EB8F626C11D3F002A63B0 /* ChequImageView.swift */; };
+		6A7EB8F926C11D59002A63B0 /* ChequeSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EB8F826C11D59002A63B0 /* ChequeSide.swift */; };
+		6A93A0DA26C14E18004EBD20 /* AddDepositService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A93A0D926C14E18004EBD20 /* AddDepositService.swift */; };
+		6AA9388026C1126900CBEB64 /* AddDepositProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA9387F26C1126900CBEB64 /* AddDepositProtocols.swift */; };
 		87B9ADAD26BD248800F70A16 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADAC26BD248800F70A16 /* ModuleBuilder.swift */; };
 		87B9ADAF26BD24C100F70A16 /* HomeTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADAE26BD24C100F70A16 /* HomeTabBarBuilder.swift */; };
 		87B9ADB126BD24DE00F70A16 /* ZelleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */; };
@@ -74,6 +83,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A78676426C106AC000B63B8 /* AddDepositPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDepositPresenter.swift; sourceTree = "<group>"; };
+		6A78676626C106D3000B63B8 /* AddDepositInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepositInteractor.swift; sourceTree = "<group>"; };
+		6A78676826C10700000B63B8 /* AddDepositRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepositRouter.swift; sourceTree = "<group>"; };
+		6A78676A26C10729000B63B8 /* AddDepositViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepositViewController.swift; sourceTree = "<group>"; };
+		6A7EB8F326C11C10002A63B0 /* AddDepositViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddDepositViewController.xib; sourceTree = "<group>"; };
+		6A7EB8F626C11D3F002A63B0 /* ChequImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChequImageView.swift; sourceTree = "<group>"; };
+		6A7EB8F826C11D59002A63B0 /* ChequeSide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChequeSide.swift; sourceTree = "<group>"; };
+		6A93A0D926C14E18004EBD20 /* AddDepositService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepositService.swift; sourceTree = "<group>"; };
+		6AA9387F26C1126900CBEB64 /* AddDepositProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepositProtocols.swift; sourceTree = "<group>"; };
 		87B9ADAC26BD248800F70A16 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		87B9ADAE26BD24C100F70A16 /* HomeTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarBuilder.swift; sourceTree = "<group>"; };
 		87B9ADB026BD24DE00F70A16 /* ZelleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZelleBuilder.swift; sourceTree = "<group>"; };
@@ -154,6 +172,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A7EB8F526C11C21002A63B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A78676A26C10729000B63B8 /* AddDepositViewController.swift */,
+				6A7EB8F326C11C10002A63B0 /* AddDepositViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A7EB8FA26C11E12002A63B0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6A78676626C106D3000B63B8 /* AddDepositInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6A7EB8FB26C11E2C002A63B0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6A78676426C106AC000B63B8 /* AddDepositPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6A7EB8FC26C11E44002A63B0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6A78676826C10700000B63B8 /* AddDepositRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6A7EB8FD26C11E57002A63B0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6AA9387F26C1126900CBEB64 /* AddDepositProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		87B9ADB626BD25E000F70A16 /* Builders */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +235,8 @@
 				87E6C4A626BA6DFD00994FA4 /* SceneDelegate.swift */,
 				87E6C4A826BA6DFD00994FA4 /* HomeTabBarController.swift */,
 				87E6C4E626BA7F8300994FA4 /* BaseViewController.swift */,
+				6A7EB8F826C11D59002A63B0 /* ChequeSide.swift */,
+				6A7EB8F626C11D3F002A63B0 /* ChequImageView.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -183,6 +244,12 @@
 		87B9ADB826BD26D100F70A16 /* AddDeposit */ = {
 			isa = PBXGroup;
 			children = (
+				6A7EB8F526C11C21002A63B0 /* View */,
+				6A7EB8FA26C11E12002A63B0 /* Interactor */,
+				6A7EB8FB26C11E2C002A63B0 /* Presenter */,
+				6A7EB8FC26C11E44002A63B0 /* Router */,
+				6A7EB8FD26C11E57002A63B0 /* Protocols */,
+				6A93A0D926C14E18004EBD20 /* AddDepositService.swift */,
 			);
 			path = AddDeposit;
 			sourceTree = "<group>";
@@ -438,6 +505,7 @@
 			files = (
 				87E6C4B126BA6DFE00994FA4 /* LaunchScreen.storyboard in Resources */,
 				87E6C4F126BA7FEE00994FA4 /* DepositTableViewCell.xib in Resources */,
+				6A7EB8F426C11C10002A63B0 /* AddDepositViewController.xib in Resources */,
 				87E6C4E426BA7F5100994FA4 /* DepositListViewController.xib in Resources */,
 				87E6C4AE26BA6DFE00994FA4 /* Assets.xcassets in Resources */,
 				87E6C51426BA815C00994FA4 /* deposits_list.json in Resources */,
@@ -465,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A7EB8F926C11D59002A63B0 /* ChequeSide.swift in Sources */,
 				87E6C51126BA815000994FA4 /* URLSessionProtocol.swift in Sources */,
 				87E6C52026BA959F00994FA4 /* DepositListPresenter.swift in Sources */,
 				87B9ADAF26BD24C100F70A16 /* HomeTabBarBuilder.swift in Sources */,
@@ -485,17 +554,24 @@
 				87E6C4E526BA7F5100994FA4 /* DLVC+DepositListViewControllerProtocol.swift in Sources */,
 				87E6C4F026BA7FEE00994FA4 /* DepositTableViewCell.swift in Sources */,
 				87E6C50A26BA815000994FA4 /* MockURLSession.swift in Sources */,
+				6A78676926C10700000B63B8 /* AddDepositRouter.swift in Sources */,
+				6A78676B26C10729000B63B8 /* AddDepositViewController.swift in Sources */,
 				87E6C4F726BA802900994FA4 /* SnackBar+Builder.swift in Sources */,
 				87E6C4A726BA6DFD00994FA4 /* SceneDelegate.swift in Sources */,
+				6A78676526C106AC000B63B8 /* AddDepositPresenter.swift in Sources */,
 				87E6C4E326BA7F5100994FA4 /* DLVC+Animations.swift in Sources */,
 				87B9ADB126BD24DE00F70A16 /* ZelleBuilder.swift in Sources */,
 				87E6C52426BA9A0E00994FA4 /* DepositListRouter.swift in Sources */,
 				87E6C51926BA823100994FA4 /* Environment.swift in Sources */,
+				6A78676726C106D3000B63B8 /* AddDepositInteractor.swift in Sources */,
 				87B9ADAD26BD248800F70A16 /* ModuleBuilder.swift in Sources */,
 				87E6C4FF26BA813A00994FA4 /* DepositModel.swift in Sources */,
 				87E6C4DF26BA7F5100994FA4 /* DLVC+SearchBar.swift in Sources */,
+				6A7EB8F726C11D3F002A63B0 /* ChequImageView.swift in Sources */,
 				87E6C4EB26BA7FCB00994FA4 /* DepositListTableViewDataSource.swift in Sources */,
+				6A93A0DA26C14E18004EBD20 /* AddDepositService.swift in Sources */,
 				87E6C51226BA815000994FA4 /* ServiceRequest.swift in Sources */,
+				6AA9388026C1126900CBEB64 /* AddDepositProtocols.swift in Sources */,
 				87E6C4F426BA802600994FA4 /* SnackBar+AlertView.swift in Sources */,
 				87E6C4ED26BA7FDA00994FA4 /* SearchResultsController.swift in Sources */,
 				87E6C52626BAA89F00994FA4 /* DepositBuilder.swift in Sources */,
