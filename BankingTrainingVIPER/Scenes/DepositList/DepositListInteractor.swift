@@ -11,7 +11,7 @@ final class DepositListInteractor : DepositListInteractorProtocol {
     typealias PaginationState = DepositViewState
     typealias DepositReponse = Subscribers.Completion<DepositError>
     
-    enum DepositViewState {
+    enum DepositViewState  : Equatable{
         case loading
         case failed
         case success

@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-final class DepositListPresenter : DepositListPresenterProtocol {
+typealias DepositListPresenterProtocolCombined = DepositListPresenterProtocol & DepositListInteractorPresenterProtocol
+final class DepositListPresenter : DepositListPresenterProtocolCombined {
     
 
     func navigateToDeposit() {
@@ -30,7 +30,7 @@ final class DepositListPresenter : DepositListPresenterProtocol {
     
 }
 
-extension DepositListPresenter : DepositListInteractorPresenterProtocol {
+extension DepositListPresenter  {
     
     func showWarning(message: String) {
         view.showWarning(message: message)

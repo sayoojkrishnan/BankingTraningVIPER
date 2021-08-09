@@ -11,7 +11,7 @@ import Foundation
 
 struct DepositModel : Codable  , Hashable {
     
-    let id : String
+    var id : String
     let date : Double?
     let chequeAmount : Double?
     let description : String?
