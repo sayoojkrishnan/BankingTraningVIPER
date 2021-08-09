@@ -16,7 +16,7 @@ protocol AddDepositPresenterProtocol: AnyObject {
     
     // VIEW -> PRESENTER
     func viewDidLoad()
-    func AddDeposit(date: String, chequeAmount: Double, description:String)
+    func AddDeposit(date: Date, chequeAmount: String, description:String)
 }
 
 protocol AddDepositInteractorInputProtocol: AnyObject {

@@ -12,11 +12,7 @@ protocol AddDepositViewControllerResponseDelegate : AnyObject {
     func didDepositCheque(deposit : DepositModel)
 }
 
-class AddDepositViewController:BaseViewController{
-    
-    class func build() -> AddDepositViewController {
-        return AddDepositViewController(nibName: "AddDepositViewController", bundle: Bundle(for: AddDepositViewController.self))
-    }
+class AddDepositViewController:BaseViewController {
     
     @IBOutlet weak var loadingBar: UIStackView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
@@ -43,6 +39,7 @@ class AddDepositViewController:BaseViewController{
     
     @objc private func didTapSave() {
         self.view.endEditing(true)
+        self.presenter?.AddDeposit(date: date.date, chequeAmount:amount.text!, description: chequeDescription.text!)
     }
 }
 extension AddDepositViewController:AddDepositViewControllerProtocol{

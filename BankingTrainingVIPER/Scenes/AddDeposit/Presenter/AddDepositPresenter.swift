@@ -8,18 +8,16 @@
 import Foundation
 
 class AddDepositPresenter: AddDepositPresenterProtocol {
-
+    
     weak var view: AddDepositViewControllerProtocol?
     var router: AddDepositRouterProtocol?
     var interactor: AddDepositInteractorInputProtocol?
     
     
-    func viewDidLoad() {
-
-    }
+    func viewDidLoad() {}
     
-    func AddDeposit(date: String, chequeAmount: Double, description: String) {
-
+    func AddDeposit(date: Date, chequeAmount: String, description: String) {
+        interactor?.addDeposit(date: date, chequeAmount: chequeAmount, description: description)
     }
 }
 
