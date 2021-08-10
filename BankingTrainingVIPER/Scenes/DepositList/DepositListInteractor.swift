@@ -122,7 +122,7 @@ final class DepositListInteractor : DepositListInteractorProtocol {
     
     func updateDeposit(deposit: [DepositViewModel]) {
         self.deposits.append(contentsOf: deposit)
-        total += deposits.reduce(0, { prev, model in return prev + model.amount })
+        total = deposit.reduce(total, { prev, model in return prev + model.amount })
         self.presenter.updateDeposit(deposits: self.deposits)
         self.presenter.updateBottomBanner(total: totalDeposits, transactions: numberOfTransaction)
     }
