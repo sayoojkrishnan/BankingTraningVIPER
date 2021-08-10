@@ -9,6 +9,7 @@ import Foundation
 typealias DepositListPresenterProtocolCombined = DepositListPresenterProtocol & DepositListInteractorPresenterProtocol
 final class DepositListPresenter : DepositListPresenterProtocolCombined {
     
+    
 
     func navigateToDeposit() {
         router.navigateToDeposit()
@@ -21,6 +22,11 @@ final class DepositListPresenter : DepositListPresenterProtocolCombined {
     func paginate() {
         interactor.paginate()
     }
+    
+    func updateDeposit(deposit: DepositViewModel) {
+        interactor.updateDeposit(deposit: [deposit])
+    }
+    
     
     var view: DepositListViewControllerProtocol!
     

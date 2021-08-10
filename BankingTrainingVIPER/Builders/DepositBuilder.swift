@@ -19,6 +19,7 @@ struct DepositBuilder : BaseModuleBuilder {
         presenter.router = router
         presenter.view = controller
         interactor.presenter = presenter
+        router.presenter = presenter
         
         let nav = UINavigationController(rootViewController: controller)
         nav.navigationBar.prefersLargeTitles = true

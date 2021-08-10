@@ -8,6 +8,8 @@ import Combine
 import Foundation
 final class DepositListInteractor : DepositListInteractorProtocol {
    
+    
+   
     typealias PaginationState = DepositViewState
     typealias DepositReponse = Subscribers.Completion<DepositError>
     
@@ -115,10 +117,13 @@ final class DepositListInteractor : DepositListInteractorProtocol {
         offset+=deposits.count
         // self?.deposits = unsortedDeposits.sorted(by: {$0.addedDate > $1.addedDate})
         // Expecting the server to return deposits in sorted order
-        self.deposits.append(contentsOf: deposits)
+        updateDeposit(deposit: deposits)
+    }
+    
+    func updateDeposit(deposit: [DepositViewModel]) {
+        self.deposits.append(contentsOf: deposit)
         total += deposits.reduce(0, { prev, model in return prev + model.amount })
         self.presenter.updateDeposit(deposits: self.deposits)
         self.presenter.updateBottomBanner(total: totalDeposits, transactions: numberOfTransaction)
     }
-    
 }

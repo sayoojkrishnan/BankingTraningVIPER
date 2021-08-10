@@ -28,6 +28,7 @@ protocol DepositListViewControllerProtocol : AnyObject {
 }
 
 protocol DepositListRouterProtocol : AnyObject {
+    var presenter : DepositListPresenterProtocol! {get set}
     var nav : UINavigationController! {get}
     func navigateToDeposit()
 }
@@ -41,7 +42,7 @@ protocol DepositListPresenterProtocol  : AnyObject {
     func navigateToDeposit()
     func present()
     func paginate()
-   
+    func updateDeposit(deposit : DepositViewModel)
 }
 
 
@@ -49,6 +50,7 @@ typealias DepositListInteractorPresenterProtocol = DepositListViewControllerProt
 protocol DepositListInteractorProtocol : AnyObject {
     init(service : DepositsListServiceProtocol)
     func fetchDeposits()
+    func updateDeposit(deposit : [DepositViewModel])
     func paginate() 
     var presenter : DepositListInteractorPresenterProtocol! {get set}
 }

@@ -14,6 +14,7 @@ protocol AddDepositViewControllerResponseDelegate : AnyObject {
 
 class AddDepositViewController:BaseViewController {
     
+    weak var routerDelegate : AddDepositRouterDelegate?
     @IBOutlet weak var loadingBar: UIStackView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
@@ -52,6 +53,6 @@ extension AddDepositViewController:AddDepositViewControllerProtocol{
     }
     
     func ReceiveData(_ data:DepositViewModel){
-        
+        routerDelegate?.didAddNewDeposit(deposit: data)
     }
 }
