@@ -23,6 +23,7 @@ class AddDepositPresenter: AddDepositPresenterProtocol {
 
 extension AddDepositPresenter: AddDepositInteractorOutputProtocol {
     func didAdd(_ add: DepositViewModel) {
-        
+      print(add)
+      view?.ReceiveData(add)
     }
 }

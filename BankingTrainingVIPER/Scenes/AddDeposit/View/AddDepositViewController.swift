@@ -50,4 +50,8 @@ extension AddDepositViewController:AddDepositViewControllerProtocol{
     func showWarning(message: String) {
         
     }
+    
+    func ReceiveData(_ data:DepositViewModel){
+        
+    }
 }

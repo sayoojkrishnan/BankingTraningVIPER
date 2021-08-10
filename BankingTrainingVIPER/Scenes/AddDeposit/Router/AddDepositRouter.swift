@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import UIKit
+
+class AddDepositRouter:AddDepositRouterProtocol{
+    static func AddDepositRouterModule(with todo: DepositModel) -> UIViewController {
+        return UIViewController()
+    }
+    
+    func navigateBackToListViewController(from view: AddDepositViewControllerProtocol) {
+        
+    }
+}

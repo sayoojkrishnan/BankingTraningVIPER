@@ -21,7 +21,7 @@ protocol AddDepositPresenterProtocol: AnyObject {
 
 protocol AddDepositInteractorInputProtocol: AnyObject {
     
-    var presenter: AddDepositInteractorInputProtocol? { get set }
+    var presenter: AddDepositPresenter? { get set }
     var deposits: DepositViewModel? { get set }
     
     // PRESENTER -> INTERACTOR
@@ -41,6 +41,8 @@ protocol AddDepositViewControllerProtocol : AnyObject {
     func updateSpinner(forState state: DepositListViewState)
         
     func showWarning(message : String)
+    
+    func ReceiveData(_ data:DepositViewModel)
     
     // PRESENTER -> VIEW
 }

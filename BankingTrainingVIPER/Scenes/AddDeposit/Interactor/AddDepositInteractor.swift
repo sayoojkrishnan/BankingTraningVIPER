@@ -29,7 +29,7 @@ class AddDepositInteractor:AddDepositInteractorInputProtocol, AddDepositInteract
     
     private(set) var state =  CurrentValueSubject<ViewState,Never>(.initial)
     
-    var presenter: AddDepositInteractorInputProtocol?
+    var presenter: AddDepositPresenter?
     var deposits: DepositViewModel?
     let addDepositService:DepositChequeServiceProtocol
     var depositCancellable : AnyCancellable?
@@ -74,6 +74,7 @@ class AddDepositInteractor:AddDepositInteractorInputProtocol, AddDepositInteract
                 }
             }, receiveValue: {[weak self] model in
                 self?.state.value = .deposited(model)
+                self?.presenter?.didAdd(DepositViewModel(deposit: model))
             })
     }
     
