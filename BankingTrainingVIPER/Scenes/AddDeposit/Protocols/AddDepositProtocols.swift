@@ -36,7 +36,7 @@ protocol AddDepositInteractorOutputProtocol: AnyObject {
 
 protocol AddDepositViewControllerProtocol : AnyObject {
     
-    var presenter: AddDepositPresenterProtocol? { get set }
+//    var presenter: AddDepositPresenterProtocol? { get set }
     
     func updateSpinner(forState state: DepositListViewState)
         

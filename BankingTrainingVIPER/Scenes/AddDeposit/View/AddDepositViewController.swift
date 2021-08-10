@@ -26,9 +26,12 @@ class AddDepositViewController:BaseViewController {
     
     var presenter: AddDepositPresenterProtocol?
     var delegate:AddDepositViewControllerResponseDelegate?
+    var router: AddDepositRouterProtocol?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        spinner.hidesWhenStopped = true
+        loadingBar.isHidden = true
         buildNabutton()
         view.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(didTapSave)))
         
@@ -40,19 +43,37 @@ class AddDepositViewController:BaseViewController {
     
     @objc private func didTapSave() {
         self.view.endEditing(true)
+        loadingBar.isHidden = false
+        spinner.startAnimating()
         self.presenter?.AddDeposit(date: date.date, chequeAmount:amount.text!, description: chequeDescription.text!)
+    }
+    
+    func showFailureAlert(message :String) {
+        showAlert(title: message, actionButtonText: "Retry",alertType: .error ) { [unowned self] in
+            self.showAlert(title: message)
+        }
     }
 }
 extension AddDepositViewController:AddDepositViewControllerProtocol{
     func updateSpinner(forState state: DepositListViewState) {
-        
+        switch state {
+        case .loading :
+            spinner.startAnimating()
+        case .failed(let error) :
+            spinner.stopAnimating()
+            showFailureAlert(message: error)
+        case .success :
+            spinner.stopAnimating()
+            loadingBar.isHidden = true
+        }
     }
     
     func showWarning(message: String) {
-        
+      showFailureAlert(message: message)
     }
     
     func ReceiveData(_ data:DepositViewModel){
         routerDelegate?.didAddNewDeposit(deposit: data)
+        router?.navigateBackToListViewController(from: self)
     }
 }

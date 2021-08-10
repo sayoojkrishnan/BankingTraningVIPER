@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit.UIViewController
 
 class AddDepositPresenter: AddDepositPresenterProtocol {
     
@@ -25,5 +26,19 @@ extension AddDepositPresenter: AddDepositInteractorOutputProtocol {
     func didAdd(_ add: DepositViewModel) {
       print(add)
       view?.ReceiveData(add)
+    }
+}
+extension AddDepositPresenter: AddDepositViewControllerProtocol{
+    
+    func updateSpinner(forState state: DepositListViewState) {
+        view?.updateSpinner(forState: state)
+    }
+    
+    func showWarning(message: String) {
+        view?.showWarning(message: message)
+    }
+    
+    func ReceiveData(_ data: DepositViewModel) {
+        
     }
 }

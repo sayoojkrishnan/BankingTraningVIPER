@@ -14,6 +14,9 @@ class AddDepositRouter:AddDepositRouterProtocol{
     }
     
     func navigateBackToListViewController(from view: AddDepositViewControllerProtocol) {
-        
+        guard let viewVC = view as? UIViewController else {
+            fatalError("Invalid view protocol type")
+        }
+        viewVC.navigationController?.popViewController(animated: true)
     }
 }

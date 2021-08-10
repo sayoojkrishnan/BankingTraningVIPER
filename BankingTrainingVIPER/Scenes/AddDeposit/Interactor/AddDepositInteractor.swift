@@ -50,6 +50,7 @@ class AddDepositInteractor:AddDepositInteractorInputProtocol, AddDepositInteract
     func deposit(amount:String, description:String, date:Date){
         guard let amount = Double(amount),!description.isEmpty  else {
             state.value = .failed("Fill in all required fields")
+            presenter?.updateSpinner(forState: .failed("Failed"))
             return
         }
         
@@ -68,6 +69,7 @@ class AddDepositInteractor:AddDepositInteractorInputProtocol, AddDepositInteract
             .sink(receiveCompletion: {[weak self] response in
                 switch response {
                 case .finished :
+                    self?.presenter?.updateSpinner(forState: .success)
                     break
                 case .failure(let error) :
                     self?.state.value = .failed(error.desciprtion)
@@ -77,5 +79,4 @@ class AddDepositInteractor:AddDepositInteractorInputProtocol, AddDepositInteract
                 self?.presenter?.didAdd(DepositViewModel(deposit: model))
             })
     }
-    
 }

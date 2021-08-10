@@ -22,6 +22,8 @@ struct AddDepositBuilder : BaseModuleBuilder {
         controller.presenter = presenter
         
         interactor.presenter = presenter
+        controller.router = router
+        
         return controller
         
     }
